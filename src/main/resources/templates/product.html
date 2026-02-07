@@ -1,0 +1,144 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+     th:replace="~{base :: Layout(~{::section})}">
+	<head>
+		
+	</head>
+	<body>
+		<section>
+
+		    <!-- Search Section -->
+		    <div class="container-fluid bg-primary py-4 mt-5">
+		        <div class="row justify-content-center">
+		            <div class="col-md-8">
+		                <div class="input-group">
+		                    <input type="text" class="form-control" placeholder="Search">
+		                    <button class="btn btn-light">
+		                        <i class="fa-solid fa-magnifying-glass"></i> Search
+		                    </button>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+
+		    <!-- Content Section -->
+		    <div class="container-fluid my-4">
+		        <div class="row">
+
+		            <!-- Categories -->
+		            <div class="col-md-2">
+		                <div class="card">
+		                    <div class="card-header bg-primary text-white">
+		                        Categories
+		                    </div>
+							<div class="list-group">
+							    <a href="/products?category=electronics"
+							       class="list-group-item list-group-item-action">
+							        Electronics
+							    </a>
+
+							    <a href="/products?category=mobile"
+							       class="list-group-item list-group-item-action">
+							        Mobile Phone
+							    </a>
+
+							    <a href="/products?category=clothes"
+							       class="list-group-item list-group-item-action">
+							        Clothes
+							    </a>
+							</div>
+
+		                </div>
+		            </div>
+
+		            <!-- Products -->
+		            <div class="col-md-10">
+		                <div class="card">
+		                    <div class="card-body">
+
+		                        <h4 class="text-center mb-4">Products</h4>
+
+		                        <div class="row g-4">
+
+		                            <!-- Product Card -->
+		                            <div class="col-md-3">
+		                                <div class="card text-center h-100">
+		                                    <img src="images/product_img/laptop.jpg"
+		                                         class="card-img-top p-3"
+		                                         style="height:160px; object-fit:contain;">
+		                                    <div class="card-body">
+		                                        <p class="fw-semibold mb-1">Laptop</p>
+		                                        <p class="mb-2 fw-bold">
+		                                            ₹ 500 <span class="text-success">20% off</span>
+		                                        </p>
+		                                        <a href="/view" class="btn btn-primary btn-sm">
+		                                            View Details
+		                                        </a>
+		                                    </div>
+		                                </div>
+		                            </div>
+
+		                            <!-- Repeat cards -->
+		                            <div class="col-md-3">
+		                                <div class="card text-center h-100">
+		                                    <img src="images/product_img/laptop.jpg"
+		                                         class="card-img-top p-3"
+		                                         style="height:160px; object-fit:contain;">
+		                                    <div class="card-body">
+		                                        <p class="fw-semibold mb-1">Laptop</p>
+		                                        <p class="mb-2 fw-bold">
+		                                            ₹ 500 <span class="text-success">20% off</span>
+		                                        </p>
+		                                        <a href="#" class="btn btn-primary btn-sm">
+		                                            View Details
+		                                        </a>
+		                                    </div>
+		                                </div>
+		                            </div>
+
+		                            <div class="col-md-3">
+		                                <div class="card text-center h-100">
+		                                    <img src="images/product_img/laptop.jpg"
+		                                         class="card-img-top p-3"
+		                                         style="height:160px; object-fit:contain;">
+		                                    <div class="card-body">
+		                                        <p class="fw-semibold mb-1">Laptop</p>
+		                                        <p class="mb-2 fw-bold">
+		                                            ₹ 500 <span class="text-success">20% off</span>
+		                                        </p>
+		                                        <a href="#" class="btn btn-primary btn-sm">
+		                                            View Details
+		                                        </a>
+		                                    </div>
+		                                </div>
+		                            </div>
+
+		                            <div class="col-md-3">
+		                                <div class="card text-center h-100">
+		                                    <img src="images/product_img/laptop.jpg"
+		                                         class="card-img-top p-3"
+		                                         style="height:160px; object-fit:contain;">
+		                                    <div class="card-body">
+		                                        <p class="fw-semibold mb-1">Laptop</p>
+		                                        <p class="mb-2 fw-bold">
+		                                            ₹ 500 <span class="text-success">20% off</span>
+		                                        </p>
+		                                        <a href="#" class="btn btn-primary btn-sm">
+		                                            View Details
+		                                        </a>
+		                                    </div>
+		                                </div>
+		                            </div>
+
+		                        </div>
+
+		                    </div>
+		                </div>
+		            </div>
+
+		        </div>
+		    </div>
+
+		</section>
+
+	</body>
+</html>

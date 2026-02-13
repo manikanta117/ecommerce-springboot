@@ -1,0 +1,39 @@
+/* Smooth transition for everything */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+}
+
+/* Soft shadow */
+.card-sh {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Hover lift effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon styling */
+.text-primary {
+    color: #4e73df !important;
+    transition: 0.3s ease-in-out;
+}
+
+/* Icon hover animation */
+.card:hover .text-primary {
+    color: #1cc88a !important;
+    transform: scale(1.2);
+    text-shadow: 0 0 15px rgba(28, 200, 138, 0.5);
+}
+
+/* Card title styling */
+.card h4 {
+    margin-top: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #333;
+}
